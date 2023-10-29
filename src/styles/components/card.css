@@ -1,0 +1,22 @@
+
+.card {
+    padding: 20px 15px;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 0.5fr 12fr 1.2fr;
+}
+
+.card__controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card__text {
+    text-align: start;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
+}

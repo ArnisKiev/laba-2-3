@@ -1,0 +1,93 @@
+@import url('components/card.css');
+@import url('components/modal-window.css');
+@import url('components/button.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #a8a8a87e;
+    padding: 20px;
+}
+
+header {
+    width: 70%;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.to-do {
+
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    & > * {
+        background-color: white;
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+
+.to-do__add-task {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.td-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+/* input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+} */
+
+
+
+
+.td-checkbox--m{
+    width: 20px;
+    height: 20px;
+}
+
+.td-checkbox--xl {
+    width: 25px;
+    height: 25px;
+}
+
+.to-do__filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-items: center;
+    padding: 15px;
+}
+
+.to-do__filter-option {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333333;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.to-do__list-task {
+    min-height: 60vh;
+}
